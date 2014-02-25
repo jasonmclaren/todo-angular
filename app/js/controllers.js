@@ -20,9 +20,7 @@ angular.module('myApp.controllers', []).
     };
 
     this.addTask = function (todo) {
-      Todos.addTask(todo, function () {
-        $scope.newTask = '';
-      });
+      Todos.addTask(todo);
     };
 
     this.deleteTask = function (todo) {
