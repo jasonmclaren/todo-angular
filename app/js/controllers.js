@@ -10,8 +10,6 @@ angular.module('myApp.controllers', []).
 
     $scope.$watch(function () {
       return Todos.collection;
-    }, function (newVal) {
-      $scope.todos = newVal;
     });
 
     this.complete = function (todo) {
